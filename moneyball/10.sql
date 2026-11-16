@@ -1,1 +1,0 @@
-SELECT "first_name", "last_name", "salary", "salaries"."year", "HR" FROM "performances" JOIN "salaries" ON "salaries"."player_id" = "performances"."player_id" AND "salaries"."year" = "performances"."year" JOIN "players" ON "players"."id" = "performances"."player_id" ORDER BY "players"."id" ASC, "salaries"."year" DESC, "HR" DESC, "salary" DESC;
